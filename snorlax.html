@@ -1,38 +1,58 @@
-mixin claw(index)
-  .snorlax__foot-claw(class=`snorlax__foot-claw--${index}`)
-    div
-.snorlax
-  .snorlax__head
-    .snorlax__head-outline
-    .snorlax__ear.snorlax__ear--left
-    .snorlax__ear.snorlax__ear--right
-    .snorlax__brow.snorlax__brow--left
-    .snorlax__brow.snorlax__brow--right
-    .snorlax__eye.snorlax__eye--left
-    .snorlax__eye.snorlax__eye--right
-    .snorlax__mouth
-      .snorlax__tooth.snorlax__tooth--left
-      .snorlax__tooth.snorlax__tooth--right
-  .snorlax__arm-left
-    .snorlax__arm-wrapper
-      .snorlax__claws--left
-      .snorlax__arm-left-arm
-  .snorlax__arm-right
-    .snorlax__claws--right
-    .snorlax__arm-right-arm
-    .snorlax__claw
-  .snorlax__body
-    .snorlax__body-shade
-    .snorlax__belly
-      .snorlax__belly-segment.snorlax__belly-segment--one
-      .snorlax__belly-segment.snorlax__belly-segment--two
-  .snorlax__left-foot
-    .snorlax__left-foot-foot
-    +claw('one')
-    +claw('two')
-    +claw('three')
-  .snorlax__right-foot
-    .snorlax__right-foot-foot
-    +claw('four')
-    +claw('five')
-    +claw('six')
+<div class="snorlax">
+  <div class="snorlax__head">
+    <div class="snorlax__head-outline"></div>
+    <div class="snorlax__ear snorlax__ear--left"></div>
+    <div class="snorlax__ear snorlax__ear--right"></div>
+    <div class="snorlax__brow snorlax__brow--left"></div>
+    <div class="snorlax__brow snorlax__brow--right"></div>
+    <div class="snorlax__eye snorlax__eye--left"></div>
+    <div class="snorlax__eye snorlax__eye--right"></div>
+    <div class="snorlax__mouth">
+      <div class="snorlax__tooth snorlax__tooth--left"></div>
+      <div class="snorlax__tooth snorlax__tooth--right"></div>
+    </div>
+  </div>
+  <div class="snorlax__arm-left">
+    <div class="snorlax__arm-wrapper">
+      <div class="snorlax__claws--left"></div>
+      <div class="snorlax__arm-left-arm"></div>
+    </div>
+  </div>
+  <div class="snorlax__arm-right">
+    <div class="snorlax__claws--right"></div>
+    <div class="snorlax__arm-right-arm"></div>
+    <div class="snorlax__claw"></div>
+  </div>
+  <div class="snorlax__body">
+    <div class="snorlax__body-shade"></div>
+    <div class="snorlax__belly">
+      <div class="snorlax__belly-segment snorlax__belly-segment--one"></div>
+      <div class="snorlax__belly-segment snorlax__belly-segment--two"></div>
+    </div>
+  </div>
+  <div class="snorlax__left-foot">
+    <div class="snorlax__left-foot-foot"></div>
+    <div class="snorlax__foot-claw snorlax__foot-claw--one">
+      <div></div>
+    </div>
+    <div class="snorlax__foot-claw snorlax__foot-claw--two">
+      <div></div>
+    </div>
+    <div class="snorlax__foot-claw snorlax__foot-claw--three">
+      <div></div>
+    </div>
+  </div>
+  <div class="snorlax__right-foot">
+    <div class="snorlax__right-foot-foot"></div>
+    <div class="snorlax__foot-claw snorlax__foot-claw--four">
+      <div></div>
+    </div>
+    <div class="snorlax__foot-claw snorlax__foot-claw--five">
+      <div></div>
+    </div>
+    <div class="snorlax__foot-claw snorlax__foot-claw--six">
+      <div></div>
+    </div>
+  </div>
+</div>
+
